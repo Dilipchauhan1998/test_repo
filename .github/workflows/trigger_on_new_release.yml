@@ -1,0 +1,14 @@
+name: Repository Dispatch Initiator
+on:
+  push:
+    branches:
+      - test_1
+      - master
+  release:
+    types:
+      - created
+jobs:
+  trigger-repository-dispatch-to-go-foundation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
