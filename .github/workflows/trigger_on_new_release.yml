@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - test_1
-      - master
+      - main
   release:
     types:
       - created
